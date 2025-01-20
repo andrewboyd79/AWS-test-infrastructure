@@ -4,9 +4,9 @@ AWSTemplateFormatVersion: "2010-09-09"
 
 Description: Testing template
 Parameters:
-  RepositoryBranc:
-    Description: Repository Branch
-    Type: String
+  RepositoryBranch:
+      Description: Repository Branch
+      Type: String
   CreatedBy:
     Description: Created By Name
     Type: String
