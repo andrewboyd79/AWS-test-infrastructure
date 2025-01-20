@@ -28,6 +28,8 @@ Resources:
       Path: /
       Tags: 
         - Key: CreatedBy
-          Value: !Ref CreatedBy      
+          Value: !Ref CreatedBy
+        - Key: Environment
+          Value: !Ref RepositoryBranch      
       # MaxSessionDuration: Integer
       # PermissionsBoundary: String
