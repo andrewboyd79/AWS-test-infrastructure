@@ -3,7 +3,10 @@
 AWSTemplateFormatVersion: "2010-09-09"
 
 Description: Testing template
-
+Parameters:
+  CreatedBy:
+    Description: Created By Name
+    Type: String
 Resources:
   CloudFormationRole:
     Type: 'AWS::IAM::Role'
@@ -22,6 +25,6 @@ Resources:
       Path: /
       Tags: 
         - Key: CreatedBy
-          Value: AJB5779      
+          Value: !Ref CreatedBy      
       # MaxSessionDuration: Integer
       # PermissionsBoundary: String
